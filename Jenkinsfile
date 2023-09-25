@@ -14,7 +14,7 @@ pipeline {
 				sh 'python3 cp.py'
 			}
 		}
-		stage ("test"){
+		stage ("test" ){
 			steps {
 				sh 'python3 test.py'
 			}
