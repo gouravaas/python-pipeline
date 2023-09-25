@@ -1,0 +1,23 @@
+pipeline {
+	agent {
+		label "Pipeline-slave"
+	}
+	stages{
+		stage ("pull scm"){
+			steps {
+				
+			}
+		}
+		stage {
+			steps ("Build"){
+				sh 'python -v'
+				sh 'python cp.py'
+			}
+		}
+		stage {
+			steps ("test"){
+				sh 'python test.py'
+			}
+		}
+	}
+}
