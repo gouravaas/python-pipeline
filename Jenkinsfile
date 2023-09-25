@@ -10,13 +10,13 @@ pipeline {
 		}
 		stage ("Build"){
 			steps {
-				sh 'python -v'
-				sh 'python cp.py'
+				sh 'python3 -v'
+				sh 'python3 cp.py'
 			}
 		}
 		stage ("test"){
 			steps {
-				sh 'python test.py'
+				sh 'python3 test.py'
 			}
 		}
 	}
