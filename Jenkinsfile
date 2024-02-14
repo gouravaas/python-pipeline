@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label "Pipeline-slave"
+		label "ubuntu-slave"
 	}
 	stages{
 		stage ("pull scm"){
